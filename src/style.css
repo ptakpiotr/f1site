@@ -1,0 +1,235 @@
+body{
+    background-color: #496565;
+    color:whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+}
+
+header{
+    display: none;
+    padding:20px;
+    background-color: darkslategray;
+    margin-bottom:15px;
+    transition:all 0.5s ease-out;
+}
+
+header svg{
+    transform: scale(2);
+}
+
+header svg:hover{
+    color:#2196F3;
+    cursor:pointer;
+}
+
+.menu-mobile{
+    position:absolute;
+    display:none;
+    left:0px;
+    top:0px;
+    margin:0;
+    padding:0;
+    z-index:5;
+    width:100vw;
+    height:100vh;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.menu-mobile svg{
+    transform:scale(3);
+}
+
+.menu-mobile ul{
+    list-style: none;
+    padding:10px;
+}
+
+.menu-item{
+    padding:20px;
+    background-color: rgba(0,0,0,0.2);
+    margin:10px;
+    text-transform: uppercase;
+}
+
+.menu-item:hover{
+    color:#2196F3;
+    background-color: darkslategray;
+    color:#496565;
+}
+
+
+.sidebar{
+    position:absolute;
+    width:200px;
+    height:100vh;
+    background-color: darkslategray;
+    color:whitesmoke;
+    transition:all 1s ease-out;
+}
+
+.sidebar svg{
+    transform: scale(2.5);
+}
+
+.sidebar svg:hover{
+    color:#2196F3;
+    cursor:pointer;
+}
+
+main{
+    position: absolute;
+    margin-left:210px;
+    transition:margin-left 1s ease-out;
+    margin-bottom:40px;
+    min-height: 100%;
+}
+
+
+.about-main svg{
+    display:inline;
+}
+
+.qrcode{
+    transform: scale(0.5);
+    margin-top: -50px;
+}
+
+a{
+    color:whitesmoke;
+    text-transform: none;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#2196F3;
+}
+.map-container{
+    width:500px;
+    height:300px;
+    z-index:2;
+}
+
+.comment{
+    margin:30px;
+    padding:5px;
+    background-color:rgba(0,0,0,0.2);
+    border-radius:10px;
+}
+
+.comment svg:hover{
+    color:#2196F3;
+    cursor:pointer;
+}
+
+.forum-item{
+    margin:20px;
+    border:1px solid whitesmoke;
+    padding:10px;
+    border-radius:5px;
+}
+
+.forum-like-area{
+    letter-spacing: 2.5px;
+    cursor:pointer;
+    width:100px;
+}
+
+iframe{
+    display:inline-block;
+    width:inherit;
+}
+
+.table-row{
+    cursor:pointer;
+}
+
+.spec-div{
+    width:80vw;
+    height:200px;
+    background-size:auto;
+    background-position-y: -200px;
+
+    text-align: center;
+    font-size:2.5em;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom:20px;
+}
+
+.standings-div{
+    background-image:url("https://images.unsplash.com/photo-1593693044238-f14e5b164e75?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80");
+}
+
+.about-div{
+    background-image: url("https://images.unsplash.com/photo-1508175911810-a4817cd3d7b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80");
+    background-position-y:-250px;
+
+    background-size:cover;
+}
+
+.forum-div{
+    background-image:url("https://images.unsplash.com/photo-1630887682878-9e44328cd2e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    background-position-y:-250px;
+
+    background-size:cover;
+}
+
+.home-div{
+    background-image: url("https://images.unsplash.com/photo-1586634978033-5a6338d532d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    background-size:cover;
+}
+
+.register-div{
+    background-image:url("https://images.unsplash.com/photo-1545313602-3e64ef9d8ee7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    background-size:cover;
+}
+.login-div{
+    background-image:url("https://images.unsplash.com/photo-1579015080750-bc87b507ae83?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80");
+    background-size:cover;
+}
+footer{
+    position: fixed;
+    z-index:1;
+    bottom:0px;
+    height: 30px;
+    background-color: darkslategray;
+    text-align: right;
+    width:100%;
+}
+
+footer:hover{
+    background-color:transparent;
+    color:transparent;
+}
+
+@media (max-width:768px) {
+    header{
+        display:block;
+    }
+    .sidebar{
+        margin-left:-200px;
+    }
+    main{
+        margin-left:5px;
+    }
+    .map-container{
+        width:99vw;
+    }
+
+    iframe{
+        width:95vw !important;
+    }
+    .qrcode{
+        transform:scale(0.4);
+        margin-left:-50px;
+    }
+
+    .spec-div{
+        width:95vw;
+        background-position-y:-150px;
+    }
+
+    .standings-div{
+        background-position-y:-200px;
+    }
+}
