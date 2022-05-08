@@ -18,4 +18,4 @@ UI layer of F1 site project, backend was written with ASP.NET 6. Browse [here](h
 - SignalR
 
 ## Example
-![example]()
+![example](https://raw.githubusercontent.com/ptakpiotr/f1site/master/scr1.png?token=GHSAT0AAAAAABULEU6B3HYMJUIXOZVBEHWSYTYGKRQ)
